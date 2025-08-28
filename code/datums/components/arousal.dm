@@ -17,8 +17,8 @@
 	START_PROCESSING(SSobj, src)
 
 /datum/component/arousal/Destroy(force)
-	. = ..()
 	STOP_PROCESSING(SSobj, src)
+	return ..()
 
 /datum/component/arousal/RegisterWithParent()
 	. = ..()
